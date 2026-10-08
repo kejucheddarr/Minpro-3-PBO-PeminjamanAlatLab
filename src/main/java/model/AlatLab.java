@@ -8,7 +8,7 @@ package model;
  *
  * @author HP
  */
-public class AlatLab {
+public abstract class AlatLab {
     protected int idAlat;
     protected String namaAlat;
     protected String kondisiAlat;
@@ -41,26 +41,37 @@ public class AlatLab {
     
     //setter 
     public void setIdAlat(int idAlat) {
-        this.idAlat = idAlat;
+        if (idAlat > 0) {
+            this.idAlat = idAlat;
+        }else{
+            System.out.println(">> ID Alat harus lebih dari 0!");
+        }
     }
     
     public void setNamaAlat(String namaAlat) {
-        this.namaAlat = namaAlat;
+        if(namaAlat != null && !namaAlat.trim().isEmpty()){
+            this.namaAlat = namaAlat;
+        }else{
+            System.out.println(">> Nama alat tidak boleh kosong!");
+        }
     }
     
     public void setKondisiAlat(String kondisiAlat) {
-        this.kondisiAlat = kondisiAlat;
+        if (kondisiAlat != null && !kondisiAlat.trim().isEmpty()){
+            this.kondisiAlat = kondisiAlat;
+        }else{
+            System.out.println(">> Kondisi alat tidak boleh kosong!");
+        }
     }
     
     public void setStok(int stok) {
-        this.stok = stok;
+        if (stok >= 0){
+            this.stok = stok;
+        }else{
+            System.out.println(">> Stok tidak boleh kurang dari 0!");
+        }
     }
     
     //method perilaku objek
-    public void tampilkanInfo() {
-        System.out.println("ID Alat: " + idAlat);
-        System.out.println("Nama Alat: " + namaAlat);
-        System.out.println("Kondisi Alat: " + kondisiAlat);
-        System.out.println("Stok Alat: " + stok);
-    }
+    public abstract void tampilkanInfo();
 }

@@ -46,6 +46,38 @@ public class Peminjaman {
     }
     
     //setter
+    public void setIdPeminjaman(int idPeminjaman) {
+        if (idPeminjaman > 0){
+            this.idPeminjaman = idPeminjaman;
+        }else{
+            System.out.println(">>ID Peminjaman harus lebih dari 0!");
+        }
+    }
+    
+    public void setNamaPetugas(String namaPetugas) {
+        if (namaPetugas != null && !namaPetugas.trim().isEmpty()){
+            this.namaPetugas = namaPetugas;
+        }else{
+            System.out.println(">> Nama petugas tidak boleh kosong!");
+        }
+    }
+    
+    public void setNamaAlat(String namaAlat) {
+        if (namaAlat != null && !namaAlat.trim().isEmpty()){
+            this.namaAlat = namaAlat;
+        }else{
+            System.out.println(">> Nama alat tidak boleh kosong!");
+        }
+    }
+    
+    public void setJumlahPinjam(int jumlahPinjam) {
+        if (jumlahPinjam >0){
+            this.jumlahPinjam = jumlahPinjam;
+        }else{
+            System.out.println(">> Jumlah pinja harus lebih dari 0!");
+        }
+    }
+    
     public void setStatus(String status){
         this.status = status;
     }

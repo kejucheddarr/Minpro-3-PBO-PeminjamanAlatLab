@@ -8,26 +8,26 @@ package model;
  *
  * @author HP
  */
-public class AlatBedah extends AlatLab {
-    protected String jenisAlat;
+public class AlatGelas extends AlatLab {
+    protected String kapasitas;
     
     //konstruktor
-    public AlatBedah(int idAlat, String namaAlat, String kondisiAlat, int stok, String jenisAlat) {
+    public AlatGelas(int idAlat, String namaAlat, String kondisiAlat, int stok, String kapasitas) {
         super(idAlat, namaAlat, kondisiAlat, stok);
-        this.jenisAlat = jenisAlat;
+        this.kapasitas = kapasitas;
     }
     
     //getter
-    public String getJenisAlat() {
-        return jenisAlat;
+    public String getKapasitas() {
+        return kapasitas;
     }
     
     //setter
-    public void setJenisAlat(String jenisAlat) {
-        if (jenisAlat != null && !jenisAlat.trim().isEmpty()){
-            this.jenisAlat = jenisAlat;
+    public void setKapasitas(String kapasitas) {
+        if (kapasitas != null && !kapasitas.trim().isEmpty()){
+            this.kapasitas = kapasitas;
         }else{
-            System.out.println(">> Jenis alat tidak boleh kosong!");
+            System.out.println(">> Kapasitas tidak boleh kosong!");
         }
     }
     
@@ -38,6 +38,6 @@ public class AlatBedah extends AlatLab {
         System.out.println("Nama Alat: " + namaAlat);
         System.out.println("Kondisi Alat: " + kondisiAlat);
         System.out.println("Stok Alat: " + stok);
-        System.out.println("Jenis Alat: " + jenisAlat);
+        System.out.println("Kapasitas: " + kapasitas);
     }
 }

@@ -24,13 +24,20 @@ public class AlatUkur extends AlatLab {
     
     //setter
     public void setBesaranDiukur(String besaranDiukur) {
-        this.besaranDiukur = besaranDiukur;
+        if (besaranDiukur != null && !besaranDiukur.trim().isEmpty()){
+            this.besaranDiukur = besaranDiukur;
+        }else{
+            System.out.println(">> Besaran ukur tidak boleh kosong!");
+        }
     }
     
     //method
     @Override
     public void tampilkanInfo() {
-        super.tampilkanInfo();
+        System.out.println("ID Alat: " + idAlat);
+        System.out.println("Nama Alat: " + namaAlat);
+        System.out.println("Kondisi Alat: " + kondisiAlat);
+        System.out.println("Stok Alat: " + stok);
         System.out.println("Besaran: " + besaranDiukur);
     }
 }

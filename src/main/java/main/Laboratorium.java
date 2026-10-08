@@ -6,11 +6,13 @@ package main;
 
 import java.util.Scanner;
 import java.util.ArrayList;
-import model.AlatLab;
 import model.AlatBedah;
 import model.AlatUkur;
-import model.Peminjaman;
+import model.AlatGelas;
 import service.PeminjamanService;
+import view.PeminjamanView;
+import view.PeminjamanViewImp;
+import controller.PeminjamanController;
 
 /**
  *
@@ -18,12 +20,12 @@ import service.PeminjamanService;
  */
 public class Laboratorium {
     public static void main(String [] args) {
-        ArrayList<AlatLab> rakLab = new ArrayList<>();
         ArrayList<AlatBedah> rakBedah = new ArrayList<>();
         ArrayList<AlatUkur> rakUkur = new ArrayList<>();
+        ArrayList<AlatGelas> rakGelas = new ArrayList<>();
 
-        rakLab.add(new AlatLab(1, "Labu Erlenmeyer", "Baik", 10));
-        rakLab.add(new AlatLab(2, "Gelas Beaker", "Baik", 5));
+        rakGelas.add(new AlatGelas(1, "Labu Erlenmeyer", "Baik", 10, "250 mL"));
+        rakGelas.add(new AlatGelas(2, "Gelas Beaker", "Baik", 5, "500 mL"));
 
         rakBedah.add(new AlatBedah(3, "Scalpel", "Baik", 5, "Pemotong"));
         rakBedah.add(new AlatBedah(4, "Forceps", "Baik", 3, "Penjepit"));
@@ -32,85 +34,52 @@ public class Laboratorium {
         rakUkur.add(new AlatUkur(6, "Termometer", "Baik", 4, "Suhu"));
         
         Scanner scanner = new Scanner(System.in);
+        
         PeminjamanService service = new PeminjamanService();
+        
+        PeminjamanView view = new PeminjamanViewImp(rakGelas, rakBedah, rakUkur);
+        
+        PeminjamanController controller = new PeminjamanController(service, view, rakGelas, rakBedah, rakUkur);
+        
         boolean berjalan = true;
         while (berjalan) {
-            System.out.println("\n==============================================");
-            System.out.println("SISTEM MANAJEMEN PEMINJAMAN ALAT LABORATORIUM");
-            System.out.println("==============================================");
-            System.out.println("1. Tampilkan Alat");
-            System.out.println("2. Tambah Peminjaman");
-            System.out.println("3. Tampilkan Riwayat Peminjaman");
-            System.out.println("4. Kembalikan Alat");
-            System.out.println("5. Hapus Peminjaman");
-            System.out.println("6. Keluar");
-            System.out.println("Pilih Menu (1-6): ");
-            
-            //opsiiiiiiiiiw
+            view.tampilkanMenu();
             try {
                 int pilihan = scanner.nextInt();
                 scanner.nextLine();
+                //opsii
                 switch (pilihan){
                     case 1 ->{
-                        System.out.println("\n=== Daftar Alat Laboratorium ===");
-                        
-                        System.out.println("\n----------- Alat Lab -----------");
-                        for (AlatLab a : rakLab) {
-                            a.tampilkanInfo();
-                            System.out.println("--------------------------------");
-                        }
-                        
-                        System.out.println("\n---------- Alat Bedah ----------");
-                        for (AlatBedah a : rakBedah) {
-                            a.tampilkanInfo();
-                            System.out.println("--------------------------------");
-                        }
-                        
-                        System.out.println("\n---------- Alat Ukur -----------");
-                        for (AlatUkur a : rakUkur) {
-                            a.tampilkanInfo();
-                            System.out.println("--------------------------------");
-                        }
+                        controller.tampilkanAlat();
+                        break;
                     }
                     case 2 ->{
-                        System.out.println("ID Peminjaman: ");
-                        int idPeminjaman = scanner.nextInt();
-                        scanner.nextLine();
-                        
-                        System.out.println("Nama Petugas: ");
-                        String namaPetugas = scanner.nextLine();
-                        
-                        System.out.println("Nama Alat: ");
-                        String namaAlat = scanner.nextLine();
-                        
-                        System.out.println("Jumlah Pinjam: ");
-                        int jumlahPinjam = scanner.nextInt();
-                        scanner.nextLine();
-                        
-                        Peminjaman peminjaman = new Peminjaman(idPeminjaman, namaPetugas, namaAlat, jumlahPinjam);
-                        
-                        service.tambahPeminjaman(peminjaman, rakLab, rakBedah, rakUkur);
+                        controller.tambahPeminjaman(view.inputPeminjaman(scanner));
+                        break;
                     }
                     case 3 ->{
-                        service.tampilkanPeminjaman();
+                        controller.tampilkanPeminjaman();
+                        break;
                     }
                     case 4 ->{
                         System.out.println("Masukkan ID Peminjaman: ");
-                        int idTarget = scanner.nextInt();
-                        scanner.nextLine();
-                        
-                        service.kembalikanAlat(idTarget, rakLab, rakBedah, rakUkur);
+                        int idKembali = view.inputIdPeminjaman(scanner);
+                        controller.kembalikanAlat(idKembali);
+                        break;
                     }
                     case 5 ->{
                         System.out.println("Masukkan ID Peminjaman yang ingin dihapus: ");
-                        int idTarget = scanner.nextInt();
-                        scanner.nextLine();
-                        
-                        service.hapusPeminjaman(idTarget);
+                        int idHapus = view.inputIdPeminjaman(scanner);
+                        controller.hapusPeminjaman(idHapus);
+                        break;
                     }
                     case 6 ->{
                         berjalan = false;
                         System.out.println(">> Program selesai.");
+                        break;
+                    }
+                    default ->{
+                        System.out.println(">> Pilihan menu tidak tersedia.");
                     }
                 }
             } catch (java.util.InputMismatchException e) {

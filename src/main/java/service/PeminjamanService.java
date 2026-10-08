@@ -8,6 +8,7 @@ import model.Peminjaman;
 import model.AlatLab;
 import model.AlatBedah;
 import model.AlatUkur;
+import model.AlatGelas;
 import java.util.ArrayList;
 
 /**
@@ -15,26 +16,39 @@ import java.util.ArrayList;
  * @author HP
  */
 public class PeminjamanService {
-    protected ArrayList<Peminjaman> daftarPeminjaman = new ArrayList<>();
+    protected final ArrayList<Peminjaman> daftarPeminjaman = new ArrayList<>();
     
-    public void tambahPeminjaman(Peminjaman peminjaman, ArrayList<AlatLab> rakLab, ArrayList<AlatBedah> rakBedah, ArrayList<AlatUkur> rakUkur) {
+    public ArrayList<Peminjaman> getDaftarPeminjaman() {
+        return daftarPeminjaman;
+    }
+    
+    public void tambahPeminjaman(Peminjaman peminjaman, ArrayList<AlatGelas> rakGelas, ArrayList<AlatBedah> rakBedah, ArrayList<AlatUkur> rakUkur) {
+        if (peminjaman == null) {
+            System.out.println(">> Data peminjaman tidak boleh kosong.");
+            return;
+        }
         if (peminjaman.getJumlahPinjam() <= 0) {
             System.out.println(">> Jumlah pinjam harus lebih dari 0.");
             return;
         }
-        AlatLab alat = cariAlat(peminjaman.getNamaAlat(), rakLab, rakBedah, rakUkur);
+        
+        AlatLab alat = cariAlat(peminjaman.getNamaAlat(), rakGelas, rakBedah, rakUkur);
         
         if (alat == null) {
             System.out.println(">> Alat tidak ditemukan.");
             return;
         }
         if (peminjaman.getJumlahPinjam() > alat.getStok()) {
-            System.out.println("Stok alat tidak mencukupi.");
+            System.out.println(">> Stok alat tidak mencukupi.");
             System.out.println(">> Stok tersedia: " + alat.getStok());
             return;
         }
         
-        alat.setStok(alat.getStok() - peminjaman.getJumlahPinjam());
+        int stokSebelum = alat.getStok();
+        int jumlahPinjam = peminjaman.getJumlahPinjam();
+        int stokSesudah = stokSebelum - jumlahPinjam;
+        
+        alat.setStok(stokSesudah);
         
         daftarPeminjaman.add(peminjaman);
         
@@ -57,7 +71,7 @@ public class PeminjamanService {
         }
     }
     
-    public void kembalikanAlat(int idTarget, ArrayList<AlatLab> rakLab, ArrayList<AlatBedah> rakBedah, ArrayList<AlatUkur> rakUkur) {
+    public void kembalikanAlat(int idTarget, ArrayList<AlatGelas> rakGelas, ArrayList<AlatBedah> rakBedah, ArrayList<AlatUkur> rakUkur) {
         for (Peminjaman p : daftarPeminjaman) {
             if (p.getIdPeminjaman() == idTarget) {
                 if (p.getStatus().equals("Dikembalikan")) {
@@ -65,7 +79,7 @@ public class PeminjamanService {
                     return;
                 }
                 
-                AlatLab alat = cariAlat (p.getNamaAlat(), rakLab, rakBedah, rakUkur);
+                AlatLab alat = cariAlat (p.getNamaAlat(), rakGelas, rakBedah, rakUkur);
                 
                 if (alat != null) {
                     alat.setStok(alat.getStok() + p.getJumlahPinjam());
@@ -95,8 +109,11 @@ public class PeminjamanService {
         System.out.println(">> ID peminjaman tidak ditemukan.");
     }
     
-    protected AlatLab cariAlat(String namaAlat, ArrayList<AlatLab> rakLab, ArrayList<AlatBedah> rakBedah, ArrayList<AlatUkur> rakUkur) {
-        for (AlatLab alat : rakLab) {
+    protected AlatLab cariAlat(String namaAlat, ArrayList<AlatGelas> rakGelas, ArrayList<AlatBedah> rakBedah, ArrayList<AlatUkur> rakUkur) {
+        if (namaAlat == null || namaAlat.trim().isEmpty()){
+            return null;
+        }
+        for (AlatGelas alat : rakGelas) {
             if (alat.getNamaAlat().equalsIgnoreCase(namaAlat)) {
                 return alat;
             }

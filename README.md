@@ -47,13 +47,15 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 <img width="335" height="150" alt="image" src="https://github.com/user-attachments/assets/6f451009-bd27-45cd-a779-e3e52952ae46" />
 <img width="340" height="154" alt="image" src="https://github.com/user-attachments/assets/c6faf661-97f9-4cf6-84c6-3b7d8e029979" />
 
-<p>Program ini memiliki pembatasan dalam proses peminjaman alat. Jika petugas memasukkan jumlah peminjaman yang melebihi stok yang tersedia, sistem akan menampilkan peringatan bahwa stok alat tidak mencukupi dan menunjukkan jumlah stok yang tersedia.</p>
+<p>Program ini memiliki pembatasan dalam proses peminjaman alat. Jika petugas mencoba meminjam alat yang tidak ada dalam daftar alat pada menu 1, sistem akan menampilkan pemberitahuan bahwa alat tersebut tidak tersedia.</p>
 
-<img width="477" height="454" alt="image" src="https://github.com/user-attachments/assets/1fb3f79c-ba6f-423c-bbe2-b34216ae28de" />
+<img width="542" height="435" alt="image" src="https://github.com/user-attachments/assets/d80fff75-282f-44b4-8819-5b53a74eb997" />
 
-<p>Selain itu juga, jika petugas mencoba meminjam alat yang tidak ada dalam daftar alat pada menu 1, sistem akan menampilkan pemberitahuan bahwa alat tersebut tidak tersedia.</p>
 
-<img width="468" height="431" alt="image" src="https://github.com/user-attachments/assets/0368ed8d-1924-45da-8e04-40fb291e803b" />
+<p>Selain itu juga, jika petugas memasukkan jumlah peminjaman yang melebihi stok yang tersedia, sistem akan menampilkan peringatan bahwa stok alat tidak mencukupi dan menunjukkan jumlah stok yang tersedia.</p>
+
+<img width="451" height="452" alt="image" src="https://github.com/user-attachments/assets/247e7cb3-5a3c-448a-8c04-e81e1e1e7fcf" />
+
 
 ---
 
@@ -103,8 +105,12 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 ---
 
 ### Inheritance
-<p>Inheritance diimplementasikan pada java class AlatLab sebagai induk/superclass, dengan AlatBedah dan AlatUkur sebagai subclass yang mewarisi atribut dan method dari AlatLab.</p>
+<p>Inheritance diimplementasikan pada java class AlatLab sebagai induk/superclass, dengan AlatBedah, AlatUkur, dan Alat Gelas sebagai subclass yang mewarisi atribut dan method dari AlatLab.</p>
 
+<img width="824" height="291" alt="image" src="https://github.com/user-attachments/assets/e608d54a-e1e3-45c5-8b45-afa0945dfb06" />
+<img width="1014" height="186" alt="image" src="https://github.com/user-attachments/assets/10b03cea-4052-490e-b809-ed20be451977" />
+<img width="1044" height="190" alt="image" src="https://github.com/user-attachments/assets/c83174be-a3c6-4ee9-bc90-b62a3d96af56" />
+<img width="1021" height="188" alt="image" src="https://github.com/user-attachments/assets/ea8fb45e-76d0-464c-a165-b3f6db2cb626" />
 
 
 ## Penjelasan penerapan polymorphism dan abstraction

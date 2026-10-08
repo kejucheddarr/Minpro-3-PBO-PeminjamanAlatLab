@@ -39,6 +39,11 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 
 <img width="549" height="696" alt="image" src="https://github.com/user-attachments/assets/add97031-f8e7-4fd3-9c3f-4b9c6da1a9b9" />
 
+<p>Setiap peminjaman alat akan memengaruhi stok. Dapat dilihat sebagai contoh, setelah petugas meminjam 7 labu erlenmeyer, stoknya berubah dari 10 menjadi 3.</p>
+<img width="335" height="150" alt="image" src="https://github.com/user-attachments/assets/6f451009-bd27-45cd-a779-e3e52952ae46" />
+<img width="340" height="154" alt="image" src="https://github.com/user-attachments/assets/c6faf661-97f9-4cf6-84c6-3b7d8e029979" />
+
+
 ---
 
 ## Penjelasan penerapan encapsulation dan Inheritance

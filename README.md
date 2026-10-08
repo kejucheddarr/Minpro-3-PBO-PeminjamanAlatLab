@@ -24,5 +24,17 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 5. Hapus Peminjaman
 6. Keluar
 
+<img width="546" height="560" alt="image" src="https://github.com/user-attachments/assets/9e14e58f-550b-4946-80cc-f0d9e3ba7ccd" />
+
+---
+
+<p>Petugas dapat melihat daftar alat yang tersedia di laboratorium melalui pilihan menu 1. Alat yang ditampilkan dikelompokkan berdasarkan kategorinya, yaitu alat lab, alat bedah, dan alat ukur. Setelah daftar alat ditampilkan, program akan otomatis kembali ke menu utama.</p>
+
+<img width="517" height="820" alt="image" src="https://github.com/user-attachments/assets/f4f8fa43-78ed-472f-a62d-b99a45bb0941" />
+<img width="502" height="826" alt="image" src="https://github.com/user-attachments/assets/bc4bfd54-2cf3-4e35-9251-e922ae33477a" />
+
+---
+
+
 ## Penjelasan penerapan encapsulation dan Inheritance
 ## Penjelasan penerapan polymorphism dan abstraction

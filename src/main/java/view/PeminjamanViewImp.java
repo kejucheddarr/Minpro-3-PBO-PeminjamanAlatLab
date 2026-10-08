@@ -139,7 +139,7 @@ public class PeminjamanViewImp implements PeminjamanView {
     @Override
     public void tampilkanPeminjaman(Peminjaman p){
         System.out.println("\n---------- Riwayat Peminjaman ----------");
-        System.out.println("ID Peminjaman :" + p.getIdPeminjaman());
+        System.out.println("ID Peminjaman: " + p.getIdPeminjaman());
         System.out.println("Nama Petugas: " + p.getNamaPetugas());
         System.out.println("Nama Alat: " + p.getNamaAlat());
         System.out.println("Jumlah Pinjam: " + p.getJumlahPinjam());

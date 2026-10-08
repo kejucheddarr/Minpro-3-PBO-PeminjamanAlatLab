@@ -139,3 +139,10 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 <img width="417" height="49" alt="image" src="https://github.com/user-attachments/assets/48f54bb1-d01e-4f5b-a784-2ae7d2075771" />
 
 ---
+
+## Penerapan Nilai Tambah
+### Interface
+<p>Interface adalah sekumpulan definisi metode yang wajib diimplementasikan oleh sebuah class. Interface diimplementasikan melalui PeminjamanView, untuk mendefinisikan method yang digunakan dalam proses tampilan dan input program. Selanjutnya, kontrak tersebut diwujudkan secara nyata oleh class PeminjamanViewImp menggunakan kata kunci implements. Interface tersebut kemudian diimplementasikan oleh PeminjamanViewImp menggunakan keyword implements.</p>
+
+<img width="654" height="364" alt="image" src="https://github.com/user-attachments/assets/8982afca-d209-4804-94b6-49fd860d6c2e" />
+<img width="1231" height="245" alt="image" src="https://github.com/user-attachments/assets/a3065c81-d4ec-4d12-bce6-830cfaeeda4f" />

@@ -43,6 +43,14 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 <img width="335" height="150" alt="image" src="https://github.com/user-attachments/assets/6f451009-bd27-45cd-a779-e3e52952ae46" />
 <img width="340" height="154" alt="image" src="https://github.com/user-attachments/assets/c6faf661-97f9-4cf6-84c6-3b7d8e029979" />
 
+<p>Program ini memiliki pembatasan dalam proses peminjaman alat. Jika petugas memasukkan jumlah peminjaman yang melebihi stok yang tersedia, sistem akan menampilkan peringatan bahwa stok alat tidak mencukupi dan menunjukkan jumlah stok yang tersedia.</p>
+<img width="477" height="454" alt="image" src="https://github.com/user-attachments/assets/1fb3f79c-ba6f-423c-bbe2-b34216ae28de" />
+
+<p>Selain itu juga, jika petugas mencoba meminjam alat yang tidak ada dalam daftar alat pada menu 1, sistem akan menampilkan pemberitahuan bahwa alat tersebut tidak tersedia.</p>
+<img width="468" height="431" alt="image" src="https://github.com/user-attachments/assets/0368ed8d-1924-45da-8e04-40fb291e803b" />
+
+
+
 
 ---
 

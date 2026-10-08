@@ -67,7 +67,7 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 ---
 
 ### 4. Kembalikan Alat
-<p>Setelah mengembalikan alat yang dipinjam, petugas dapat memilih menu 4 untuk mencatat pengembaliannya. Setelah memasukkan ID peminjaman, sistem akan mencatat bahwa alat telah dikembalikan, dan balik ke menu awal.</p>
+<p>Setelah alat dikembalikan, petugas dapat memilih menu 4 untuk mencatat pengembalian alat tersebut. Setelah memasukkan ID peminjaman, sistem akan mencatat bahwa alat telah dikembalikan, dan balik ke menu awal.</p>
 
 <img width="510" height="547" alt="image" src="https://github.com/user-attachments/assets/c2f866d2-e9ea-497c-8580-ff09a1764898" />
 
@@ -97,7 +97,7 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 
 ## Penjelasan penerapan Encapsulation dan Inheritance
 ### Encapsulation (Enkapsulasi)
-<p>Enkapsulasi diterapkan pada java class pada package model, menggunakan access modifier protected pada atribut di class untuk membatasi akses langsung terhadap data dari luar class. Data tersebut kemudian hanya dapat diakses melalui method getter dan setter.</p>
+<p>Enkapsulasi diterapkan pada class java pada package model, menggunakan access modifier protected pada atribut di class untuk membatasi akses langsung terhadap data dari luar class. Data tersebut kemudian hanya dapat diakses melalui method getter dan setter.</p>
 
 <img width="391" height="136" alt="image" src="https://github.com/user-attachments/assets/72260edd-0e3b-48f2-bba1-62c5d900a222" />
 <img width="712" height="664" alt="image" src="https://github.com/user-attachments/assets/f45dcdda-2076-4c26-a2f6-e5d527bd6263" />
@@ -136,7 +136,7 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 
 ## Penerapan Nilai Tambah
 ### Interface
-<p>Interface adalah sekumpulan definisi metode yang wajib diimplementasikan oleh sebuah class. Interface diimplementasikan melalui PeminjamanView, untuk mendefinisikan method yang digunakan dalam proses tampilan dan input program. Interface tersebut kemudian diimplementasikan oleh PeminjamanViewImp menggunakan keyword implements.</p>
+<p>Interface merupakan struktur yang digunakan untuk mendefinisikan method yang harus diimplementasikan oleh suatu class. Interface diimplementasikan melalui PeminjamanView, untuk mendefinisikan method yang digunakan dalam proses tampilan dan input program. Interface tersebut kemudian diimplementasikan oleh PeminjamanViewImp menggunakan keyword implements.</p>
 
 <img width="654" height="364" alt="image" src="https://github.com/user-attachments/assets/8982afca-d209-4804-94b6-49fd860d6c2e" />
 <img width="1231" height="245" alt="image" src="https://github.com/user-attachments/assets/a3065c81-d4ec-4d12-bce6-830cfaeeda4f" />

@@ -1,6 +1,6 @@
 # Minpro-3-PBO-PeminjamanAlatLab
 ## Deskripsi singkat program
-<p>PeminjamanAlatLab adalah program sistem sederhana berbasis Java untuk mengelola peminjaman alat pada laboratorium biologi. Program ini menyediakan fitur untuk menambah peminjaman, menampilkan riwayat peminjaman, dan mengembalikan alat melalui menunya.</p>
+<p>PeminjamanAlatLab adalah program sistem sederhana berbasis Java untuk mengelola peminjaman alat pada laboratorium biologi. Program ini menyediakan fitur untuk menampilkan daftar alat, menambah peminjaman, menampilkan riwayat peminjaman, mengembalikan alat, dan menghapus data peminjaman melalui menu yang tersedia.</p>
 
 ## Penjelasan Struktur Package
 Project ini menggunakan struktur **Model → View → Controller → Service → Main** untuk memisahkan fungsi setiap bagian program.
@@ -16,7 +16,7 @@ Project ini menggunakan struktur **Model → View → Controller → Service →
 ---
 
 ## Penjelasan Alur Program
-Saat program pertama kali di run, sistem akan memberikan output menu utama yang terdiri dari empat pilihan:
+Saat program pertama kali di run, sistem akan memberikan output menu utama yang terdiri dari enam pilihan:
 1. Tampilkan Alat
 2. Tambah Peminjaman
 3. Tampilkan Riwayat Peminjaman
@@ -30,7 +30,7 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 ---
 
 ### 1. Tampilkan Alat
-<p>Petugas dapat melihat daftar alat yang tersedia di laboratorium melalui pilihan menu 1. Alat yang ditampilkan dikelompokkan berdasarkan kategorinya, yaitu alat lab, alat bedah, dan alat ukur. Setelah daftar alat ditampilkan, program akan otomatis kembali ke menu utama.</p>
+<p>Petugas dapat melihat daftar alat yang tersedia di laboratorium melalui pilihan menu 1. Alat yang ditampilkan dikelompokkan berdasarkan kategorinya, yaitu alat gelas, alat bedah, dan alat ukur. Setelah daftar alat ditampilkan, program akan otomatis kembali ke menu utama.</p>
 
 <img width="517" height="820" alt="image" src="https://github.com/user-attachments/assets/f4f8fa43-78ed-472f-a62d-b99a45bb0941" />
 <img width="502" height="826" alt="image" src="https://github.com/user-attachments/assets/bc4bfd54-2cf3-4e35-9251-e922ae33477a" />
@@ -105,7 +105,7 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 ---
 
 ### Inheritance
-<p>Inheritance diimplementasikan pada java class AlatLab sebagai induk/superclass, dengan AlatBedah, AlatUkur, dan Alat Gelas sebagai subclass yang mewarisi atribut dan method dari AlatLab.</p>
+<p>Inheritance diimplementasikan pada java class AlatLab sebagai induk/superclass, dengan AlatBedah, AlatUkur, dan AlatGelas sebagai subclass yang mewarisi atribut dan method dari AlatLab.</p>
 
 <img width="824" height="291" alt="image" src="https://github.com/user-attachments/assets/e608d54a-e1e3-45c5-8b45-afa0945dfb06" />
 <img width="1014" height="186" alt="image" src="https://github.com/user-attachments/assets/10b03cea-4052-490e-b809-ed20be451977" />
@@ -116,17 +116,11 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 
 ## Penjelasan penerapan Polymorphism dan Abstraction
 ### Polymorphism
-<p>Polymorphism diterapkan dengan method overriding, yang diimplementasikan pada method tampilkanInfo() dari class AlatLab dan dioverride oleh class AlatBedah, AlatUkur, dan Alat Gelas.</p>
+<p>Polymorphism diterapkan dengan method overriding, yang diimplementasikan pada method tampilkanInfo() dari class AlatLab dan dioverride oleh class AlatBedah, AlatUkur, dan AlatGelas.</p>
 
 <img width="622" height="183" alt="image" src="https://github.com/user-attachments/assets/86985075-b67a-4e7d-8e1e-a53fe59e83e2" />
 <img width="585" height="190" alt="image" src="https://github.com/user-attachments/assets/e7ad0725-e588-49fa-8514-708e76fd7cb1" />
 <img width="580" height="198" alt="image" src="https://github.com/user-attachments/assets/6181b3b6-17ac-4cb2-9ac4-53583266b6f9" />
-
-<p>Polymorphism juga diterapkan melalui interface PeminjamanView yang diimplementasikan oleh class PeminjamanViewImp.</p>
-
-<img width="777" height="753" alt="image" src="https://github.com/user-attachments/assets/a2b8bd87-80eb-4aa3-841d-cc9c06dfccf5" />
-<img width="779" height="506" alt="image" src="https://github.com/user-attachments/assets/b26789ef-b6e4-411b-918f-db7fa0311f43" />
-<img width="764" height="631" alt="image" src="https://github.com/user-attachments/assets/8c4c3071-57cd-4335-be5b-ec26d79fdd78" />
 
 ---
 
@@ -146,3 +140,7 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 
 <img width="654" height="364" alt="image" src="https://github.com/user-attachments/assets/8982afca-d209-4804-94b6-49fd860d6c2e" />
 <img width="1231" height="245" alt="image" src="https://github.com/user-attachments/assets/a3065c81-d4ec-4d12-bce6-830cfaeeda4f" />
+
+<img width="777" height="753" alt="image" src="https://github.com/user-attachments/assets/a2b8bd87-80eb-4aa3-841d-cc9c06dfccf5" />
+<img width="779" height="506" alt="image" src="https://github.com/user-attachments/assets/b26789ef-b6e4-411b-918f-db7fa0311f43" />
+<img width="764" height="631" alt="image" src="https://github.com/user-attachments/assets/8c4c3071-57cd-4335-be5b-ec26d79fdd78" />

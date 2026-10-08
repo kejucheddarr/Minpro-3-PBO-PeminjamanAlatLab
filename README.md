@@ -27,14 +27,19 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 <img width="546" height="560" alt="image" src="https://github.com/user-attachments/assets/9e14e58f-550b-4946-80cc-f0d9e3ba7ccd" />
 
 ---
-
+### 1. Tampilkan Alat
 <p>Petugas dapat melihat daftar alat yang tersedia di laboratorium melalui pilihan menu 1. Alat yang ditampilkan dikelompokkan berdasarkan kategorinya, yaitu alat lab, alat bedah, dan alat ukur. Setelah daftar alat ditampilkan, program akan otomatis kembali ke menu utama.</p>
 
 <img width="517" height="820" alt="image" src="https://github.com/user-attachments/assets/f4f8fa43-78ed-472f-a62d-b99a45bb0941" />
 <img width="502" height="826" alt="image" src="https://github.com/user-attachments/assets/bc4bfd54-2cf3-4e35-9251-e922ae33477a" />
 
 ---
+### 2. Tambah Peminjaman
+<p>Saat petugas ingin meminjam alat, mereka dapat memilih menu 2. Mereka lalu harus mengisi detail-detail seperti ID peminjaman, nama petugas, nama alat, dan jumlah yang dipinjam. Setelah data tersebut berhasil di input, sistem akan menampilkan pesan “Peminjaman berhasil ditambahkan” beserta sisa stok alatnya, lalu balik ke menu awal.</p>
 
+<img width="549" height="696" alt="image" src="https://github.com/user-attachments/assets/add97031-f8e7-4fd3-9c3f-4b9c6da1a9b9" />
+
+---
 
 ## Penjelasan penerapan encapsulation dan Inheritance
 ## Penjelasan penerapan polymorphism dan abstraction

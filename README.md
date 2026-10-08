@@ -42,19 +42,35 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 <img width="549" height="696" alt="image" src="https://github.com/user-attachments/assets/add97031-f8e7-4fd3-9c3f-4b9c6da1a9b9" />
 
 <p>Setiap peminjaman alat akan memengaruhi stok. Dapat dilihat sebagai contoh, setelah petugas meminjam 7 labu erlenmeyer, stoknya berubah dari 10 menjadi 3.</p>
+
 <img width="335" height="150" alt="image" src="https://github.com/user-attachments/assets/6f451009-bd27-45cd-a779-e3e52952ae46" />
 <img width="340" height="154" alt="image" src="https://github.com/user-attachments/assets/c6faf661-97f9-4cf6-84c6-3b7d8e029979" />
 
 <p>Program ini memiliki pembatasan dalam proses peminjaman alat. Jika petugas memasukkan jumlah peminjaman yang melebihi stok yang tersedia, sistem akan menampilkan peringatan bahwa stok alat tidak mencukupi dan menunjukkan jumlah stok yang tersedia.</p>
+
 <img width="477" height="454" alt="image" src="https://github.com/user-attachments/assets/1fb3f79c-ba6f-423c-bbe2-b34216ae28de" />
 
 <p>Selain itu juga, jika petugas mencoba meminjam alat yang tidak ada dalam daftar alat pada menu 1, sistem akan menampilkan pemberitahuan bahwa alat tersebut tidak tersedia.</p>
+
 <img width="468" height="431" alt="image" src="https://github.com/user-attachments/assets/0368ed8d-1924-45da-8e04-40fb291e803b" />
 
 ---
 
 ### 3. Tampilkan Riwayat Peminjaman
 <p>Petugas dapat melihat riwayat peminjaman alat di laboratorium pada menu 3. Menu ini akan menampilkan ID peminjaman, nama petugas, nama alat, dan jumlah alat yang telah dipinjam, serta status "Dipinjam" yang secara otomatis diberikan oleh sistem. Setelah menampilkan riwayat, program akan balik ke menu awal.</p>
+
+<img width="485" height="777" alt="image" src="https://github.com/user-attachments/assets/e725918e-be73-4e7d-a9eb-7386143ebb7e" />
+
+---
+
+### 4. Kembalikan Alat
+<p>Setelah mengembalikan alat yang dipinjam, petugas dapat memilih menu 4 untuk mencatat pengembaliannya. Setelah memasukkan ID peminjaman, sistem akan mencatat bahwa alat telah dikembalikan, dan balik ke menu awal.</p>
+
+<img width="510" height="547" alt="image" src="https://github.com/user-attachments/assets/c2f866d2-e9ea-497c-8580-ff09a1764898" />
+
+<p>Habis melakukan pengembalian, status peminjaman alat dapat dilihat kembali melalui menu riwayat, dengan status yang otomatis diperbarui menjadi “Dikembalikan”.</p>
+
+<img width="453" height="534" alt="image" src="https://github.com/user-attachments/assets/ebb48c5c-4fec-443b-9f8d-2b7c6e870be5" />
 
 
 ---

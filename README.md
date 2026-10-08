@@ -27,6 +27,7 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 <img width="546" height="560" alt="image" src="https://github.com/user-attachments/assets/9e14e58f-550b-4946-80cc-f0d9e3ba7ccd" />
 
 ---
+
 ### 1. Tampilkan Alat
 <p>Petugas dapat melihat daftar alat yang tersedia di laboratorium melalui pilihan menu 1. Alat yang ditampilkan dikelompokkan berdasarkan kategorinya, yaitu alat lab, alat bedah, dan alat ukur. Setelah daftar alat ditampilkan, program akan otomatis kembali ke menu utama.</p>
 
@@ -34,6 +35,7 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 <img width="502" height="826" alt="image" src="https://github.com/user-attachments/assets/bc4bfd54-2cf3-4e35-9251-e922ae33477a" />
 
 ---
+
 ### 2. Tambah Peminjaman
 <p>Saat petugas ingin meminjam alat, mereka dapat memilih menu 2. Mereka lalu harus mengisi detail-detail seperti ID peminjaman, nama petugas, nama alat, dan jumlah yang dipinjam. Setelah data tersebut berhasil di input, sistem akan menampilkan pesan “Peminjaman berhasil ditambahkan” beserta sisa stok alatnya, lalu balik ke menu awal.</p>
 
@@ -49,7 +51,10 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 <p>Selain itu juga, jika petugas mencoba meminjam alat yang tidak ada dalam daftar alat pada menu 1, sistem akan menampilkan pemberitahuan bahwa alat tersebut tidak tersedia.</p>
 <img width="468" height="431" alt="image" src="https://github.com/user-attachments/assets/0368ed8d-1924-45da-8e04-40fb291e803b" />
 
+---
 
+### 3. Tampilkan Riwayat Peminjaman
+<p>Petugas dapat melihat riwayat peminjaman alat di laboratorium pada menu 3. Menu ini akan menampilkan ID peminjaman, nama petugas, nama alat, dan jumlah alat yang telah dipinjam, serta status "Dipinjam" yang secara otomatis diberikan oleh sistem. Setelah menampilkan riwayat, program akan balik ke menu awal.</p>
 
 
 ---

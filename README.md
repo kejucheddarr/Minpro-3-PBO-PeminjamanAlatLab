@@ -112,5 +112,30 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 <img width="1044" height="190" alt="image" src="https://github.com/user-attachments/assets/c83174be-a3c6-4ee9-bc90-b62a3d96af56" />
 <img width="1021" height="188" alt="image" src="https://github.com/user-attachments/assets/ea8fb45e-76d0-464c-a165-b3f6db2cb626" />
 
+---
 
-## Penjelasan penerapan polymorphism dan abstraction
+## Penjelasan penerapan Polymorphism dan Abstraction
+### Polymorphism
+<p>Polymorphism diterapkan dengan method overriding, yang diimplementasikan pada method tampilkanInfo() dari class AlatLab dan dioverride oleh class AlatBedah, AlatUkur, dan Alat Gelas.</p>
+
+<img width="622" height="183" alt="image" src="https://github.com/user-attachments/assets/86985075-b67a-4e7d-8e1e-a53fe59e83e2" />
+<img width="585" height="190" alt="image" src="https://github.com/user-attachments/assets/e7ad0725-e588-49fa-8514-708e76fd7cb1" />
+<img width="580" height="198" alt="image" src="https://github.com/user-attachments/assets/6181b3b6-17ac-4cb2-9ac4-53583266b6f9" />
+
+<p>Polymorphism juga diterapkan melalui interface PeminjamanView yang diimplementasikan oleh class PeminjamanViewImp.</p>
+
+<img width="777" height="753" alt="image" src="https://github.com/user-attachments/assets/a2b8bd87-80eb-4aa3-841d-cc9c06dfccf5" />
+<img width="779" height="506" alt="image" src="https://github.com/user-attachments/assets/b26789ef-b6e4-411b-918f-db7fa0311f43" />
+<img width="764" height="631" alt="image" src="https://github.com/user-attachments/assets/8c4c3071-57cd-4335-be5b-ec26d79fdd78" />
+
+---
+
+### Abstraction
+<p>Abstraction adalah teknik menyederhanakan suatu objek dengan cara menonjolkan atribut yang penting dan menyembunyikan detail implementasinya. Dalam project ini, abstraction diterapkan melalui abstract class AlatLab. Class ini berfungsi sebagai templat utama yang mendefinisikan atribut dan metode dasar untuk seluruh jenis peralatan laboratorium.</p>
+
+<img width="381" height="121" alt="image" src="https://github.com/user-attachments/assets/6f08548f-0c9f-4cca-9709-b0f8098683c9" />
+
+<p>Metode tampilkanInfo() dideklarasikan sebagai abstract method, agar setiap subclass (AlatGelas, AlatBedah, dan AlatUkur) wajib mengimplementasikannya sesuai dengan karakteristik masing-masing alat.</p>
+<img width="417" height="49" alt="image" src="https://github.com/user-attachments/assets/48f54bb1-d01e-4f5b-a784-2ae7d2075771" />
+
+---

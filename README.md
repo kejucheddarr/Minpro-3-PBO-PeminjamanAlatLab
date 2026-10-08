@@ -24,6 +24,7 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 5. Hapus Peminjaman
 6. Keluar
 
+
 <img width="546" height="560" alt="image" src="https://github.com/user-attachments/assets/9e14e58f-550b-4946-80cc-f0d9e3ba7ccd" />
 
 ---
@@ -72,6 +73,23 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 
 <img width="453" height="534" alt="image" src="https://github.com/user-attachments/assets/ebb48c5c-4fec-443b-9f8d-2b7c6e870be5" />
 
+---
+
+### 5. Hapus Peminjaman
+<p>Pada menu 5, riwayat peminjaman yang sudah lama dapat dihapus agar data yang tersimpan dalam program tidak terlalu banyak. Penghapusan dilakukan dengan memasukkan ID peminjaman, kemudian sistem akan menghapus data tersebut secara otomatis.</p>
+
+<img width="525" height="544" alt="image" src="https://github.com/user-attachments/assets/e94ab68e-238e-4702-bcef-3301abe5e38d" />
+
+<p>Data yang sudah dihapus tidak akan ditampilkan lagi pada menu riwayat.</p>
+
+<img width="489" height="402" alt="image" src="https://github.com/user-attachments/assets/251245dd-829e-4546-b337-258eecb7032c" />
+
+---
+
+### 6. Keluar
+<p>Jika petugas ingin keluar dari program, mereka dapat memilih menu 6, dan pengulangan menu akan berhenti.</p>
+
+<img width="724" height="433" alt="image" src="https://github.com/user-attachments/assets/c39eec24-79d2-4412-9525-f43c654c506f" />
 
 ---
 

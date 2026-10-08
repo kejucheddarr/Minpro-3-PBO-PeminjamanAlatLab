@@ -93,5 +93,18 @@ Saat program pertama kali di run, sistem akan memberikan output menu utama yang 
 
 ---
 
-## Penjelasan penerapan encapsulation dan Inheritance
+## Penjelasan penerapan Encapsulation dan Inheritance
+### Encapsulation (Enkapsulasi)
+<p>Enkapsulasi diterapkan pada java class pada package model, menggunakan access modifier protected pada atribut di class untuk membatasi akses langsung terhadap data dari luar class. Data tersebut kemudian hanya dapat diakses melalui method getter dan setter.</p>
+
+<img width="391" height="136" alt="image" src="https://github.com/user-attachments/assets/72260edd-0e3b-48f2-bba1-62c5d900a222" />
+<img width="712" height="664" alt="image" src="https://github.com/user-attachments/assets/f45dcdda-2076-4c26-a2f6-e5d527bd6263" />
+
+---
+
+### Inheritance
+<p>Inheritance diimplementasikan pada java class AlatLab sebagai induk/superclass, dengan AlatBedah dan AlatUkur sebagai subclass yang mewarisi atribut dan method dari AlatLab.</p>
+
+
+
 ## Penjelasan penerapan polymorphism dan abstraction
